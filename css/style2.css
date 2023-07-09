@@ -17,29 +17,29 @@ body {
 }
 
 h2{
-    font-size: 20px;
-    border-radius: 10px;
-    margin-right: 10%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    color: rgb(10, 10, 10);
     text-align: center;
-
+    margin-bottom: 55px;
+   
 }
 
 
 
 form{
     padding: 50px;
-    width: 420px;
-    height: 700px;
     text-align: center;
-    box-shadow: 0 0 20 rgba(0, 0, 0.2);
 
+    
 }
 
 
 
 i{
     padding: 14px;
-    border-radius: 50%;
+    font-size: 20px;
 }
 
 
@@ -47,8 +47,9 @@ input{
     padding: 10px;
     width: 100%;
     margin-bottom: 25px;
-    border: 2px solid #FFFFFF;
+    border: 2px solid #4b4b4b;
     font-size: 17px;
+    border-radius: 5px;
     
 }
 
@@ -58,25 +59,39 @@ label{
     margin-bottom: 10px;
 }
 
+form p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    
+}
+form a p{
+    font-size: 23px;
+}
+
+
 form a{
     display: block;
     color: black;
     font-size: 17px;
-    text-decoration: none;
+    text-decoration: underline;
     margin-bottom: 35px;
 
 }
 
 button{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
     padding: 14px 75px;
     border: 0;
     font-size: 17px;
+    font-weight: 550;
     cursor: pointer;
 }
 
 
 
 @media(min-width: 501px){
+   
     body{
         padding: 30px;
 
@@ -88,6 +103,8 @@ button{
 }
 
 @media(min-width: 801px){
+   
+    }
     body{
         padding: 30px;
 
@@ -96,4 +113,3 @@ button{
     form{
         width: 100%;
     }
-}
