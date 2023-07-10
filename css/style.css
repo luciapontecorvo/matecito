@@ -1,19 +1,68 @@
-body{
-    background: #bdc3c7;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.header{
+body,
+header {
+  background: #d9a7c7;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fdf9c8, #d9a7c7);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fdf9c8, #d9a7c7);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 
-    background-image: url("../multimedia/header.jpg");
-    height: 600px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  transition: top 0.5s ease-in-out;
+}
 
+header.hidden {
+  top: -100%;
+}
+.navbar{
+    display: flex;
+}
+.navbar .register{
+    margin-bottom:120px;
+  
+}
+.d-flex{
+  margin-bottom: 130px;
+}
+
+.container-fluid .logo {
+    margin-right: 45px;
+}
+
+.logo img{
+       height: 200px;
+        width: 300px; 
+       
+}
+.container-about{
+    padding: 45px
+}
+
+.register{
+  font-size: 18px;
 }
 
 
+.breadcrumb-item a{
+  text-decoration-style: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: rgba(99, 99, 99, 0.3);
+  color: rgb(80, 80, 80);
+}
+
+.nav-link, .navlink .dropdown-toggle{
+  color: rgb(80, 80, 80);
+  margin: 5px;
+}
+  
