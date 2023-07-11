@@ -15,25 +15,18 @@ header {
 }
 
 header {
-  
   width: 100%;
 }
-
-.collapse{
-  justify-content: space-between;
-}
- .register{
-  margin-bottom: 130px;
-  margin-right: 15px
-}
 .d-flex{
-  margin-bottom: 130px;
+  margin-top: 15px;
 }
-
+.d-flex , .register{
+  margin-bottom: 100px;
+}
 .logo img{
        height: 250px;
         width: 300px; 
-        margin-right:200px ;
+        margin-left: 20px ;
        
 }
 
@@ -50,40 +43,19 @@ header {
   margin: 5px;
 }
   
-
-#contenedorcarrusel,.contenedor-decarru{
-  height: 500px;
-  overflow: hidden;
-}
-.carrusel{
- height: 100%;
- position: relative;
-}
-.imagcarrusel{
-  height: 100%;
-  
-}
-.flechascarrusel{
-  position: absolute;
-  top:0;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 25px;
+.carousel-inner{
+  height: 90vh;
 }
 
- #contenedorcarrusel a{
-  text-decoration: none;
- }
- #contenedorcarrusel i{
-  color:aliceblue;
- }
-.imagcarrusel  img{
-  width: 100%;
+.carousel-item {
   height: 100%;
 }
+
+.carousel-item img{
+  height: 100%;
+}
+
+
 
 
 .row{
@@ -96,13 +68,15 @@ header {
 }
 
 
+
 .row.card {
-    cursor: pointer;
+    cursor:pointer ;
     position: relative;
- 
+    
 }
 
 .row .card:hover {
+  transition: 1s;
   transform: scale(1.1);
   z-index: 1;
   box-shadow: 21px 9px 35px 6px rgba(128,111,128,1);

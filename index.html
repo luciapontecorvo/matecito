@@ -12,31 +12,37 @@
 </head>
 <body>
   <header >
-    <nav class="navbar navbar-expand-lg navbar-light ">
-      <div class="container-fluid collapse navbar-collapse ">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse"> 
-          <!---barra de busqueda(boostrap)-->
-        <form class="d-flex ">
-          <input class="form-control me-2" > <!--type="search" placeholder="Search" aria-label="Search"-->
-          <button class="btn btn-outline-secondary" type="submit">Buscar</button>
-        </form>
-        <!---logo-->
-        <div class="logo">
-          <img src="/multimedia/0cf44601bb813f224ddd8134b2e090dd (1).png" alt="Logo">
-        </div>
-        <!---registro-->
-        <nav class="register"aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="/form/login.html">Login</a></li>
-              <li class="breadcrumb-item"><a href="/form/registro.html">Registro</a></li>
-            </ol>
+    <!---inicio-->
+    <nav class="navbar1 navbar-expand-lg navbar-light ">
+      <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!---para mobile-->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="d-flex"> <!---barra de busqueda-->
+              <input class="form-control me-1" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <!--logo-->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <div class="logo">
+                  <a href="/index.html"> <img src="/multimedia/0cf44601bb813f224ddd8134b2e090dd (1).png" alt="Logo"></a>
+                </div>
+              </li>
+            </ul>
+            <!---registro de ususuario-->
+            <nav class="register"aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/form/login.html">Login</a></li>
+                <li class="breadcrumb-item"><a href="/form/registro.html">Registro</a></li>
+              </ol>
           </nav>
-        
-      </div>
-    </div>
+          </div>
+        </div>
+      </nav>
     </nav>
     
     
@@ -78,62 +84,39 @@
         
 <!---carrucel echo a mano, tiene links de google fonts-->
         <section id="contenedorcarrusel" >
-          <div class="carrusel" id="itemcarru-1">
-            <div class="imagcarrusel" id="imgcarru-1">
-              <img src="/multimedia/header.jpg" alt="">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div class="flechascarrusel" >
-              <a href="#itemcarru-3">
-                <i><span class="material-symbols-outlined">
-                arrow_back_ios
-                </span></i>
-              </a>
-              <a href="#itemcarru-2">
-                <i><span class="material-symbols-outlined">
-                arrow_forward_ios
-                </span></i>
-              </a>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/multimedia/matecampeones.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/multimedia/matekitty.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/multimedia/mateimperial.jpg" class="d-block w-100" alt="...">
+              </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true" ></span>
+              <span class="visually-hidden ">Next</span>
+            </button>
           </div>
-          <div class="carrusel" id="itemcarru-2">
-            <div class="imagcarrusel" id="imgcarru-2">
-              <img src="/multimedia/matekitty.jpg" alt="">
-            </div>
-            <div class="flechascarrusel">
-              <a href="#itemcarru-1">
-                <i><span class="material-symbols-outlined">
-                arrow_back_ios
-                </span></i>
-              </a>
-              <a href="#itemcarru-3">
-                <i><span class="material-symbols-outlined">
-                arrow_forward_ios
-                </span></i>
-              </a>
-            </div>
-          </div>
-          <div class="carrusel" id="itemcarru-3">
-            <div class="imagcarrusel" id="imgcarru-3">
-              <img src="/multimedia/matecampeones.jpg" alt="">
-            </div>
-            <div class="flechascarrusel">
-              <a href="#itemcarru-2">
-                <i><span class="material-symbols-outlined">
-                arrow_back_ios
-                </span></i>
-              </a>
-              <a href="#itemcarru-1">
-                <i><span class="material-symbols-outlined">
-                arrow_forward_ios
-                </span></i>
-              </a>
-            </div>
-          </div>  
         </section>
+
+        
         <!---cards metidas en una lista horizontal de bootstrap-->
-        <div class="row row-cols-1 row-cols-md-3 g-1">
+        <div class="row row-cols-2 row-cols-md-4 g-1">
           <div class="col">
-            <div class="card" style="width: 20rem;">
+            <div class="card" style="width: 13rem;">
               <img src="/multimedia/matekitty.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">matekitty</h5>
@@ -144,7 +127,7 @@
             </div>
           </div>
           <div class="col">
-            <div class="card" style="width: 20rem;">
+            <div class="card" style="width: 13rem;">
               <img src="/multimedia/matekitty.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">matekitty</h5>
@@ -155,7 +138,7 @@
             </div>
           </div>
           <div class="col">
-            <div class="card" style="width: 20rem;">
+            <div class="card" style="width: 13rem;">
               <img src="/multimedia/matekitty.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">matekitty</h5>
@@ -166,7 +149,7 @@
             </div>
           </div>
           <div class="col">
-            <div class="card" style="width: 20rem;">
+            <div class="card" style="width: 13rem;">
               <img src="/multimedia/matekitty.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">matekitty</h5>
