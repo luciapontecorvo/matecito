@@ -15,34 +15,25 @@ header {
 }
 
 header {
-  position: fixed;
-  top: 0;
+  
   width: 100%;
-  z-index: 100;
-  transition: top 0.5s ease-in-out;
 }
 
-header.hidden {
-  top: -100%;
+.collapse{
+  justify-content: space-between;
 }
-.navbar{
-    display: flex;
-}
-.navbar .register{
-    margin-bottom:120px;
-  
+ .register{
+  margin-bottom: 130px;
+  margin-right: 15px
 }
 .d-flex{
   margin-bottom: 130px;
 }
 
-.container-fluid .logo {
-    margin-right: 45px;
-}
-
 .logo img{
-       height: 200px;
+       height: 250px;
         width: 300px; 
+        margin-right:200px ;
        
 }
 
@@ -59,3 +50,62 @@ header.hidden {
   margin: 5px;
 }
   
+
+#contenedorcarrusel,.contenedor-decarru{
+  height: 500px;
+  overflow: hidden;
+}
+.carrusel{
+ height: 100%;
+ position: relative;
+}
+.imagcarrusel{
+  height: 100%;
+  
+}
+.flechascarrusel{
+  position: absolute;
+  top:0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+}
+
+ #contenedorcarrusel a{
+  text-decoration: none;
+ }
+ #contenedorcarrusel i{
+  color:aliceblue;
+ }
+.imagcarrusel  img{
+  width: 100%;
+  height: 100%;
+}
+
+
+.row{
+  align-items: center;
+  margin-top:45px;
+  margin-left: 25px;
+}
+.pagination{
+  margin-top: 15px;
+}
+
+
+.row.card {
+    cursor: pointer;
+    position: relative;
+ 
+}
+
+.row .card:hover {
+  transform: scale(1.1);
+  z-index: 1;
+  box-shadow: 21px 9px 35px 6px rgba(128,111,128,1);
+-moz-box-shadow: 21px 9px 35px 6px rgba(128,111,128,1);
+box-shadow: 21px 9px 35px 6px rgba(128,111,128,1);
+}
