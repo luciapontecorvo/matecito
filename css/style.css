@@ -13,22 +13,18 @@ header {
   background: linear-gradient(to right, #fdf9c8, #d9a7c7);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+.collapse img{
+  height: 250px;
+}
+.container-fluid{
+  display: flex;
+}
+.collapse{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-header {
-  width: 100%;
-}
-.d-flex{
-  margin-top: 15px;
-}
-.d-flex , .register{
-  margin-bottom: 100px;
-}
-.logo img{
-       height: 250px;
-        width: 300px; 
-        margin-left: 20px ;
-       
-}
 
 
 .breadcrumb-item a{
