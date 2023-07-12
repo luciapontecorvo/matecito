@@ -15,22 +15,30 @@
     <div>
         <h2>¡Crea una cuenta para tener el control de tus pedidos!</h2>
 
-        <form>
-            <label for="name"><p>Nombre</p></label>
-            <input type="text" id="title" name="name" required>
-            <i class="fa-sharp fa-solid fa-user"></i>
+        <form class="form">
 
-            <label for="email"><p>Email</p></label>
-            <input type="text" id="email" name="email" required>
-            <i class="fa-sharp fa-solid fa-envelope"></i>
+            <div class="container">
 
-            <label for="phone"><p>Contacto</p></label>
-            <input type="phone" id="phone" name="phone" required>
-            <i class="fa-sharp fa-solid fa-phone"></i>
+                <div class="input-container">
+                <label for="name"><i class="fa-sharp fa-solid fa-user icon"></i></label>
+                <input type="text" placeholder="Nombre Completo" required>
+                </div>
+    
+                <div class="input-container">
+                <label for="email"><i class="fa-sharp fa-solid fa-envelope icon"></i></label>
+                <input type="text" placeholder="Correo Electronico" required>
+                </div>
+    
+                <div class="input-container">
+                <label for="phone"><i class="fa-sharp fa-solid fa-phone icon"></i></label>
+                <input type="phone" placeholder="Télefono" required>
+                </div>
 
-            <label for="password"><p>Contraseña</p></label>
-            <input type="password" id="password" name="password" required>
-            <i class="fa-sharp fa-solid fa-lock"></i>
+                <div class="input-container">
+                <label for="password"><i class="fa-sharp fa-solid fa-lock icon"></i></label>
+                <input type="password" placeholder="Contraseña" required>
+                </div>
+            </div>
 
             <a href="login.html"><p>¿Ya tienes cuenta? Inicia sesión</p></a>
 

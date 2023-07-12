@@ -14,17 +14,25 @@
 
     <div>
 
-        <form>
-            
+
+
+        <form class="form">
+
             <h2>¡Inicia sesión para tener el control de tus pedidos!</h2>
 
-            <label for="email"><p>Email</p></label>
-            <input type="text" id="email" name="email" required>
-            <i class="fa-sharp fa-solid fa-envelope"></i>
+            <div class="container">
 
-            <label for="password"><p>Contraseña</p></label>
-            <input type="password" id="password" name="password" required>
-            <i class="fa-sharp fa-solid fa-lock"></i>
+                    <div class="input-container">
+                    <label for="name"><i class="fa-sharp fa-solid fa-user icon"></i></label>
+                    <input type="text" placeholder="Nombre Completo" required>
+                    </div>
+
+                    <div class="input-container">
+                    <label for="password"><i class="fa-sharp fa-solid fa-lock icon"></i></label>
+                    <input type="password" placeholder="Contraseña" required>
+                    </div>
+
+            </div>
 
             <a href="registro.html"><p>Si no tienes una cuenta ¡Registrate!</p></a>
 
