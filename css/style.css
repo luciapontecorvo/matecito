@@ -12,7 +12,8 @@ header {
   
 }
 .collapse img{
-  height: 250px;
+  
+  height: 200px;
 }
 .container-fluid{
   display: flex;
@@ -22,6 +23,7 @@ header {
   align-items: center;
   justify-content: space-between;
 }
+
 
 
 
@@ -38,7 +40,8 @@ header {
 }
   
 .carousel-inner{
-  height: 90vh;
+  height: 70vh;
+  
 }
 
 .carousel-item {
@@ -47,6 +50,7 @@ header {
 
 .carousel-item img{
   height: 100%;
+  
 }
 
 
@@ -54,8 +58,9 @@ header {
 
 .row{
   align-items: center;
+  padding: 4px ;
   margin-top:45px;
-  margin-left: 25px;
+  margin-left: 62px;
 }
 .pagination{
   margin-top: 15px;
